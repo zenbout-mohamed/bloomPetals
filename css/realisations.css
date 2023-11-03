@@ -1,0 +1,179 @@
+*{
+    box-sizing:border-box;
+    font-family:"Montserrat , sans serif ";
+    padding:0.3rem;
+    font-size:20px;
+}
+
+header{
+    background-color:#7B7B7B;
+    
+
+}
+
+body{
+    background-color: #F1DBA9;
+}
+
+h1{
+    color:#0D78DC;
+    text-align:center;
+    font-family:"agbalumo";
+    font-size:30px;
+}
+h2{
+    font-size:25px;
+}
+nav{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+form{
+    display:flex;
+    text-align: center;
+    align-items: center;
+}
+
+.pos-input{
+    text-align: center;
+    align-items:center;
+}
+
+input[type=search]{
+    width:200px;
+    height:45px;
+    border-radius: 25px;
+}
+
+.art1{
+    text-align: center;
+    align-items: center;
+    flex:2 2 500px;
+}
+ul a {
+    color:#0A0508;
+    font-size:30px;
+}
+li{
+    text-decoration:none;
+}
+
+img{
+    object-fit:cover;
+    width:200px;
+    height:145px;
+}
+
+.cards{
+    display:flex;
+    justify-content: space-around;
+
+}
+/* -----------Effets Spéciaux------------------- */
+.morph img {
+    width: 200px;
+    height: 150px;
+    -webkit-filter: grayscale(0) blur(0px);
+    filter: grayscale(0) blur(0px);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+   
+.morph :hover img {
+    width: 150px; /* on affiche l'image au carré */
+    height: 150px;
+    border-radius: 50%;  /* on arrondit l'image */
+    -webkit-transform: rotate(360deg); /* rotation de l'image */
+    transform: rotate(360deg);
+  }
+/* ----------Media Queries------------ */
+  @media screen and (min-width: 768px) and (max-width: 1388px){
+
+html{
+    width :100% ;
+    padding :0px ;
+}
+nav{
+    width :100% ;           
+}
+    
+nav ul{
+    display:flex;
+    flex-wrap:wrap;
+    
+}
+    
+nav ul a {
+    display:flex;
+    flex-wrap:wrap;
+    
+}
+          
+        
+body,header,main,footer{
+    width :100% ;
+}
+        
+.cards .morph{
+    display:flex;
+    flex-wrap:wrap;
+    
+}
+    
+main{
+    display:flex;
+    flex-wrap:wrap;  
+}
+section{
+    display:flex;
+    flex-wrap:wrap;
+    
+}
+
+        
+}
+    
+@media screen and (max-width: 768px){
+    
+html{
+    width :100% ;
+    padding :0px ;
+}
+    
+nav{
+    width :100% ;           
+}
+    
+ul{
+    width:100%;
+}
+nav ul{
+    display:flex;
+    flex-wrap:wrap;
+    
+}
+
+
+    
+nav ul a {
+    display:flex;
+    flex-direction:column;
+    
+}
+            
+body,header,main,footer{
+    width :100% ;
+}
+            
+#tri_class{
+    display:flex;
+    flex-direction:column;
+}
+    
+.cards .morph{
+    display:flex;
+    flex-direction:column;
+}
+        
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" type ="text/css" href ="./css/contact.css">
+    <!-- Report du code de caractère issue de google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Report code Google font pour un autre type de caractère -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat+Alternates&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Roboto&display=swap" rel="stylesheet">
+    <title>BloomPetals</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class ="nav-space">
+                    <a href ="index.html">Home </a>
+                    <a href ="entreprise.html">Entreprise</a>
+                    <a href ="realisations.html">Réalisations</a>
+                    <a href ="contact.html">Contact</a>
+                </div>
+            </ul>
+                <form class ="form_1" method ="post">
+                    <label class ="label_nav" for="search">Rechercher : </label>
+                    <input type ="search" name ="search" minlength="4" maxlength="8" size="10" placeholder ="Rechercher..."/>
+                </form>
+               
+            
+        </nav>
+    </header>
+    
+<main>
+        <h1>BloomPetals Contact</h1>
+        
+        <section class="container">
+            <form class ="form_2" method ="post">
+            <fieldset>
+                <legend><h1>Contactez-Nous !</h1></legend>
+                    <div>
+                        <label for="Pays">Civilité : </label>
+                        <select>
+                            <option value="valeur1" selected> Madame</option>
+                            <option value="valeur2">Monsieur</option>
+                        </select>
+                        <div>
+                            <label for="Username">Prénom : </label>
+                            <input type="text" name ="username" id ="username" value="Votre Prénom *" required/>
+
+                        </div>
+                        <div>
+                            <label for="Lastname">Nom: </label>
+                            <input type="text" name ="lastname" id ="lastname" value="Votre Nom *" required/>
+                        </div>
+                        <div>
+                            <label for="Email">Email : </label>
+                            <input type="email" name ="email" id ="email" value="E-mail : *" required/>
+                        </div>
+                        <div>
+                            <label for="Email">Adresse Postale : </label>
+                            <input type="text" name ="adresse" id ="adresse" value="Indiquez votre adresse postale : *" required/>
+                        </div>
+                    </div>
+                <span></span>
+                    <div>
+                        <label for="Pays">Pays : </label>
+                        <select>
+                            <option value="valeur1" selected> Pays-Bas</option>
+                            <option value="valeur2">Comore</option>
+                            <option value="valeur3">Etats-Unis</option>
+                            <option value="valeur4">Chine</option>
+                            <option value="valeur5">Algérie</option>
+                            <option value="valeur6">Maroc</option>
+                            <option value="valeur7">Belgique</option>
+                            <option value="valeur8">France</option>
+                            <option value="valeur9">Suède</option>
+                            <option value="valeur10">Angleterre</option>
+                            <option value="valeur11">Brésil</option>
+                        </select>
+                        
+            
+                <hr><h2>Genre :</h2></hr>
+
+                        <div>
+                            <label for="enfant">Enfant :</label>
+                            <input type="radio" name="enfant" id="enfant" required />
+                        </div>
+                        <div>
+                            <label for="adolescent">Adolescent :</label>
+                            <input type="radio" name="adolescent" id="adolescent" required />
+                        </div>
+                        <div>
+                            <label for="adulte">Adulte</label>
+                            <input type="radio" name="adulte" id="adulte" required />
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea  name="text" id="text" cols="45" rows="5" placeholder="Votre Message : *" required></textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="case">En cochant cette case, vous validez la politique de confidentialté.</label>
+                            <input type="checkbox" name="case" id="case" required />
+                        </div>
+                        <div>
+                            <input type="submit" name="submit" Value="Transmettre"/>
+                        </div>
+                    </div>   
+            </fieldset> 
+            </form>
+        </section>
+</main>
+
+</body>
+</html>
+
+
+
